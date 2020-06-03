@@ -45,7 +45,7 @@ gem "grape", "~> 0.2.1"
 gem "stamp"
 
 # Pagination
-gem "kaminari", "~> 0.14.1"
+gem "kaminari", "~> 1.2.1"
 
 # HAML
 gem "haml-rails", "~> 0.3.5"
