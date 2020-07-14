@@ -101,8 +101,8 @@ group :assets do
 
   gem 'chosen-rails',     "0.9.8"
   gem 'jquery-atwho-rails', "0.1.7"
-  gem "jquery-rails",     "2.1.3"
-  gem "jquery-ui-rails",  "2.0.2"
+  gem "jquery-rails", "3.1.3"
+  gem "jquery-ui-rails", "2.0.2"
   gem "modernizr",        "2.6.2"
   gem "raphael-rails",    "1.5.2"
   gem 'bootstrap-sass',   "2.2.1.1"
