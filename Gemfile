@@ -119,9 +119,9 @@ end
 
 group :development, :test do
   gem 'rails-dev-tweaks'
-  gem 'spinach-rails'
+  gem 'spinach-rails', '>= 0.1.8'
   gem "rspec-rails"
-  gem "capybara"
+  gem "capybara", ">= 1.1.3"
   gem "pry"
   gem "awesome_print"
   gem "database_cleaner"
