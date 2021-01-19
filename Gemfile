@@ -16,10 +16,10 @@ gem "pg", group: :postgres
 
 # Auth
 gem "devise", "~> 2.1.0"
-gem 'omniauth', "~> 1.1.1"
-gem 'omniauth-google-oauth2'
+gem 'omniauth', '~> 2.0.0'
+gem 'omniauth-google-oauth2', '>= 0.2.5'
 gem 'omniauth-twitter'
-gem 'omniauth-github'
+gem 'omniauth-github', '>= 2.0.0'
 
 # GITLAB patched libs
 gem "grit",          git: "https://github.com/gitlabhq/grit.git",           ref: '7f35cb98ff17d534a07e3ce6ec3d580f67402837'
@@ -63,7 +63,7 @@ gem "ffaker"
 gem "seed-fu"
 
 # Markdown to HTML
-gem "redcarpet",     "~> 2.2.2"
+gem "redcarpet", "~> 3.5.1"
 gem "github-markup", "~> 0.7.4", require: 'github/markup'
 
 # Servers
