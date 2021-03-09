@@ -8,14 +8,14 @@ def linux_only(require_as)
   RUBY_PLATFORM.include?('linux') && require_as
 end
 
-gem "rails", "3.2.9"
+gem "rails", "6.0.3.5"
 
 # Supported DBs
 gem "mysql2", group: :mysql
 gem "pg", group: :postgres
 
 # Auth
-gem "devise", "~> 2.1.0"
+gem "devise", "~> 4.7.0"
 gem 'omniauth', "~> 1.1.1"
 gem 'omniauth-google-oauth2'
 gem 'omniauth-twitter'
@@ -48,7 +48,7 @@ gem "stamp"
 gem "kaminari", "~> 0.14.1"
 
 # HAML
-gem "haml-rails", "~> 0.3.5"
+gem "haml-rails", "~> 0.5.3"
 
 # Files attachments
 gem "carrierwave", "~> 0.7.1"
@@ -71,14 +71,14 @@ gem "thin", '~> 1.5.0'
 gem "unicorn", "~> 4.4.0"
 
 # Issue tags
-gem "acts-as-taggable-on", "2.3.3"
+gem "acts-as-taggable-on", "3.1.0"
 
 # Decorators
-gem "draper", "~> 0.18.0"
+gem "draper", "~> 1.0.0"
 
 # Background jobs
 gem "resque", "~> 1.23.0"
-gem 'resque_mailer'
+gem 'resque_mailer', '>= 2.2.4'
 
 # HTTP requests
 gem "httparty"
@@ -94,19 +94,19 @@ gem "foreman"
 gem "git"
 
 group :assets do
-  gem "sass-rails",   "~> 3.2.5"
-  gem "coffee-rails", "~> 3.2.2"
+  gem "sass-rails", "~> 5.0.8"
+  gem "coffee-rails", "~> 4.2.2"
   gem "uglifier",     "~> 1.3.0"
   gem "therubyracer"
 
-  gem 'chosen-rails',     "0.9.8"
+  gem 'chosen-rails', '0.9.11.1'
   gem 'jquery-atwho-rails', "0.1.7"
-  gem "jquery-rails",     "2.1.3"
-  gem "jquery-ui-rails",  "2.0.2"
+  gem "jquery-rails", "4.0.1"
+  gem "jquery-ui-rails", "2.0.2"
   gem "modernizr",        "2.6.2"
   gem "raphael-rails",    "1.5.2"
   gem 'bootstrap-sass',   "2.2.1.1"
-  gem "font-awesome-sass-rails", "~> 2.0.0"
+  gem "font-awesome-sass-rails", "~> 2.0.0", ">= 2.0.0.0"
   gem "gemoji", "~> 1.2.1", require: 'emoji/railtie'
 end
 
@@ -118,15 +118,15 @@ group :development do
 end
 
 group :development, :test do
-  gem 'rails-dev-tweaks'
-  gem 'spinach-rails'
-  gem "rspec-rails"
+  gem 'rails-dev-tweaks', '>= 1.1.0'
+  gem 'spinach-rails', '>= 0.1.8'
+  gem "rspec-rails", ">= 2.12.0"
   gem "capybara"
   gem "pry"
   gem "awesome_print"
   gem "database_cleaner"
   gem "launchy"
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '>= 4.1.0'
 
   # Guard
   gem 'guard-rspec'
