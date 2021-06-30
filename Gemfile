@@ -8,7 +8,7 @@ def linux_only(require_as)
   RUBY_PLATFORM.include?('linux') && require_as
 end
 
-gem "rails", "3.2.9"
+gem "rails", "4.0.0"
 
 # Supported DBs
 gem "mysql2", group: :mysql
@@ -60,7 +60,7 @@ gem "six"
 gem "ffaker"
 
 # Seed data
-gem "seed-fu"
+gem "seed-fu", ">= 2.3.0"
 
 # Markdown to HTML
 gem "redcarpet",     "~> 2.2.2"
@@ -71,7 +71,7 @@ gem "thin", '~> 1.5.0'
 gem "unicorn", "~> 4.4.0"
 
 # Issue tags
-gem "acts-as-taggable-on", "2.3.3"
+gem "acts-as-taggable-on", "2.4.1"
 
 # Decorators
 gem "draper", "~> 0.18.0"
